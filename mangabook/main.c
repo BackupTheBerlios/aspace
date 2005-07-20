@@ -1,4 +1,4 @@
-/* -------------------------------------------------------------------------------------
+/*
     Under GNU LGPL
 */
 
@@ -7,18 +7,13 @@
 */
 
 /* includes */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/* prototypes */
-
-extern int main(int argc, char **argv);
+#include "main.h"
 
 /* program */
 
 int
 main(int argc, char **argv)
 {
+
     exit(0);
 }

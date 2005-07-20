@@ -5,8 +5,11 @@ EXE = bin/MangaBook
 
 all : $(EXE) 
 
-o/main.o : main.c 
+o/filetype.o : filetype.c filetype.h 
+	gcc $(shell gccprefs) -c -o o/filetype.o filetype.c 
+
+o/main.o : main.c main.h filetype.h 
 	gcc $(shell gccprefs) -c -o o/main.o main.c 
 
-$(EXE) : o/main.o 
-	gcc $(shell gccprefs) -o $(EXE) o/main.o 
+$(EXE) : o/main.o o/filetype.o 
+	gcc $(shell gccprefs) -o $(EXE) o/filetype.o o/main.o 

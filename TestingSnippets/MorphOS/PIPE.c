@@ -38,11 +38,3 @@ main (int argc, char argv)
     return RETURN_OK;
 
 }
-
-
-/* =================================================================== */
-/*
-   BPTR    = File Pointer
-   STRPTR  = String Pointer
-
-*/
